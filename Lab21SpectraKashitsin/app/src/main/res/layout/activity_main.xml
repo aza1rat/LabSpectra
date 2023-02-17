@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.example.lab21_spectrakashitsin.SpectraView
+        android:id="@+id/spectraView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal"
+
+        />
+
+    <LinearLayout
+        android:id="@+id/layoutSpectraSendCtrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonZoomIn"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:onClick="zoomIn"
+            android:text="@string/zoomIn" />
+
+        <Button
+            android:id="@+id/buttonZoomOut"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:onClick="zoomOut"
+            android:text="@string/zoomOut" />
+
+        <TextView
+            android:id="@+id/textViewElement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/element" />
+
+        <Spinner
+            android:id="@+id/spinnerElements"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/buttonLoadElement"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="@string/load" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutToSettings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonSettings"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="showSettings"
+            android:text="@string/settings" />
+
+        <Button
+            android:id="@+id/buttonDisplaySettings"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="showDisplayDialog"
+            android:text="@string/displaySettings" />
+    </LinearLayout>
+</LinearLayout>

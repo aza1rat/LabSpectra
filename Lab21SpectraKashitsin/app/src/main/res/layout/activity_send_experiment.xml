@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutSendExperiment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".SendExperimentActivity">
+
+    <com.example.lab21_spectrakashitsin.SpectraView
+        android:id="@+id/spectraSendView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal"
+
+        />
+
+    <LinearLayout
+        android:id="@+id/layoutSpectraSendCtrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonSendZoomIn"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:onClick="zoomIn"
+            android:text="@string/zoomIn" />
+
+        <Button
+            android:id="@+id/buttonSendZoomOut"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:onClick="zoomOut"
+            android:text="@string/zoomOut" />
+
+        <TextView
+            android:id="@+id/textViewSendElement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/element" />
+
+        <Spinner
+            android:id="@+id/spinnerSendElements"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/buttonSendLoadElement"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:onClick="onElementLoad"
+            android:text="@string/load" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutImageSet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonTakeFromAssets"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="loadFromAssets"
+            android:text="@string/already" />
+
+        <Button
+            android:id="@+id/buttonTakeFromFile"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="loadFromGallery"
+            android:text="@string/from_gallery" />
+
+        <Button
+            android:id="@+id/buttonDisplay"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onShowDisplayDialog"
+            android:text="@string/display" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutImageSend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonPreview"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onPreview"
+            android:text="@string/preview" />
+
+        <Button
+            android:id="@+id/buttonSend"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onSaveImage"
+            android:text="@string/send" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imagePreview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/name"
+        app:srcCompat="@drawable/noimage" />
+
+    <LinearLayout
+        android:id="@+id/layoutInputNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textViewSendNote"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/note" />
+
+        <EditText
+            android:id="@+id/inputNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/name"
+            tools:ignore="TouchTargetSizeCheck,DuplicateSpeakableTextCheck"
+            android:importantForAutofill="no" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutInputTag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textViewSendTag"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/tag" />
+
+        <EditText
+            android:id="@+id/inputTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/name"
+            tools:ignore="TouchTargetSizeCheck"
+            android:importantForAutofill="no" />
+    </LinearLayout>
+
+</LinearLayout>

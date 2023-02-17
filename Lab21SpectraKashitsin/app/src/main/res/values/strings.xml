@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Lab21-Spectra Kashitsin</string>
+    <string name="zoomIn">+</string>
+    <string name="zoomOut">-</string>
+    <string name="division">Деления</string>
+    <string name="displaySettings">Отображение</string>
+    <string name="settings">Настройки</string>
+    <string name="element">Элемент:</string>
+    <string name="load">->|</string>
+    <string name="ok">Ок</string>
+    <string name="cancel">Отмена</string>
+    <string name="tags">Теги</string>
+    <string name="create">Создать</string>
+    <string name="send">Отправить</string>
+    <string name="preview">Предпросмотр</string>
+    <string name="note">Название:</string>
+    <string name="tag">Тег:</string>
+    <string name="display">Отображение</string>
+    <string name="from_gallery">Из галереи</string>
+    <string name="already">Заготовленные</string>
+    <string name="name">Name</string>
+    <string name="luminance">Свечение</string>
+    <string name="profile_R">RGB Профиль (R)</string>
+    <string name="profile_G">RGB Профиль (G)</string>
+    <string name="profile_B">RGB Профиль (B)</string>
+    <string name="address">Адрес:</string>
+    <string name="bgLum">Интенсивность заднего фона</string>
+</resources>

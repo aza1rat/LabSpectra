@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/1/Documents/AndroidStudioProject/Lab21SpectraKashitsin/app/src/main/res/drawable/ic_baseline_access_time_24.xml" value="0.141" />
+        <entry key="..\:/Users/1/Documents/AndroidStudioProject/Lab21SpectraKashitsin/app/src/main/res/drawable/ic_baseline_done_24.xml" value="0.141" />
+        <entry key="..\:/Users/1/Documents/AndroidStudioProject/Lab21SpectraKashitsin/app/src/main/res/drawable/ic_baseline_hourglass_empty_24.xml" value="0.141" />
+        <entry key="..\:/Users/1/Documents/AndroidStudioProject/Lab21SpectraKashitsin/app/src/main/res/layout/activity_display.xml" value="0.18072916666666666" />
+        <entry key="..\:/Users/1/Documents/AndroidStudioProject/Lab21SpectraKashitsin/app/src/main/res/layout/activity_list_experiment.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/1/Documents/AndroidStudioProject/Lab21SpectraKashitsin/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/1/Documents/AndroidStudioProject/Lab21SpectraKashitsin/app/src/main/res/layout/activity_send_experiment.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/1/Documents/AndroidStudioProject/Lab21SpectraKashitsin/app/src/main/res/layout/activity_settings.xml" value="0.264" />
+        <entry key="..\:/Users/1/Documents/AndroidStudioProject/Lab21SpectraKashitsin/app/src/main/res/layout/activity_specra_data.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/1/Documents/AndroidStudioProject/Lab21SpectraKashitsin/app/src/main/res/layout/dialog_display.xml" value="0.4" />
+        <entry key="..\:/Users/1/Documents/AndroidStudioProject/Lab21SpectraKashitsin/app/src/main/res/layout/list_experiment.xml" value="0.25416666666666665" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
